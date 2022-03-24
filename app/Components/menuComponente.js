@@ -36,7 +36,6 @@ function menuComponente(){
             </View>
         );
 }
-export default menuComponente;
 //         );
 //     }
 // }
@@ -67,3 +66,5 @@ const styles = StyleSheet.create({
         fontSize: 18
       }
 });
+
+export default menuComponente;
