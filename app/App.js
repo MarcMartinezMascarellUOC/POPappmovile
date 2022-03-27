@@ -18,7 +18,7 @@ export default function App() {
         </View>
 
       
-      <menuComponente />
+      {/* <menuComponente /> */}
       {/* <View style={styles.menuContainer}>
         
         <TouchableOpacity style={styles.bottomItem} onPress={() => {alert("EVOLUCIÓN")}}>
