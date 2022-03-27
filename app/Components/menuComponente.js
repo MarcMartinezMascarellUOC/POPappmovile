@@ -3,8 +3,7 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
 
 
- export class menuComponente extends React.Component{
-     render(){
+const menuComponente = () => {
          return(
 
             <View style={styles.menuContainer}>
@@ -36,7 +35,6 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
          );
      }
- }
 
 const styles = StyleSheet.create({
     menuContainer: {
@@ -64,3 +62,5 @@ const styles = StyleSheet.create({
         fontSize: 18
       }
 });
+
+export default menuComponente;
