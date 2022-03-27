@@ -18,8 +18,8 @@ export default function App() {
         </View>
 
       
-      {/* <menuComponente /> */}
-      {/* <View style={styles.menuContainer}>
+       {/* <menuComponente />  */}
+       <View style={styles.menuContainer}>
         
         <TouchableOpacity style={styles.bottomItem} onPress={() => {alert("EVOLUCIÓN")}}>
           <View style={styles.bottomItemInner}>
@@ -43,7 +43,7 @@ export default function App() {
           <View style={styles.bottomItemInner}>
             <Text style={styles.textoBoxes}>CONTACTAR</Text>
           </View>
-        </TouchableOpacity> */}
+        </TouchableOpacity>
 
         {/* <View style={styles.bottomItem}>
         <TouchableOpacity>
@@ -78,7 +78,7 @@ export default function App() {
           </View>
         </View> */}
       
-      {/* </View> */}
+       </View> 
     </View>
   );
 }
@@ -95,31 +95,30 @@ const styles = StyleSheet.create({
     height: '5%',
     backgroundColor: '#7fbcac',
     zIndex: 1
+  },
+  menuContainer: {
+    height: '46.5%',
+    backgroundColor: '#5C5C5C',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    padding: 5
+  },
+  bottomItem: {
+    width: '50%',
+    height: '50%',
+    padding: 5,
+  },
+  bottomItemInner: {
+    flex: 1,
+    backgroundColor: 'cadetblue',
+    borderRadius: 30
+  },
+  textoBoxes:{
+    flex: 1,
+    padding: 10,
+    textAlign: 'center',
+    fontWeight: 'bold',
+    fontSize: 18
   }
-  // menuContainer: {
-  //   height: '46.5%',
-  //   backgroundColor: '#5C5C5C',
-  //   flexDirection: 'row',
-  //   flexWrap: 'wrap',
-  //   padding: 5
-  // },
-  // bottomItem: {
-  //   width: '50%',
-  //   height: '50%',
-  //   padding: 5,
-  // },
-  // bottomItemInner: {
-  //   flex: 1,
-  //   backgroundColor: 'cadetblue',
-  //   borderRadius: 30
-  // },
-  // textoBoxes:{
-  //   flex: 1,
-  //   padding: 10,
-  //   textAlign: 'center',
-  //   fontWeight: 'bold',
-  //   fontSize: 18
-  // }
-  
 
 });

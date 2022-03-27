@@ -3,11 +3,10 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
 
 
-// export class menuComponente extends React.Component{
-//     render(){
-//         return(
-function menuComponente(){
-        return(
+ export class menuComponente extends React.Component{
+     render(){
+         return(
+
             <View style={styles.menuContainer}>
         
                 <TouchableOpacity style={styles.bottomItem} onPress={() => {alert("EVOLUCIÓN")}}>
@@ -34,11 +33,10 @@ function menuComponente(){
                 </View>
                 </TouchableOpacity>
             </View>
-        );
-}
-//         );
-//     }
-// }
+
+         );
+     }
+ }
 
 const styles = StyleSheet.create({
     menuContainer: {
@@ -66,5 +64,3 @@ const styles = StyleSheet.create({
         fontSize: 18
       }
 });
-
-export default menuComponente;
