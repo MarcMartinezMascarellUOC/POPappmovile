@@ -44,39 +44,6 @@ export default function App() {
             <Text style={styles.textoBoxes}>CONTACTAR</Text>
           </View>
         </TouchableOpacity>
-
-        {/* <View style={styles.bottomItem}>
-        <TouchableOpacity>
-          <View style={styles.bottomItemInner}>
-              <Text>Press here</Text>
-          </View>
-        </TouchableOpacity>
-        </View>
-       
-
-        <View style={styles.bottomItem}>
-          <View style={styles.bottomItemInner}>
-            
-                <Text>Press here</Text>
-            
-          </View>
-        </View>
-
-        <View style={styles.bottomItem}>
-          <View style={styles.bottomItemInner}>
-            <TouchableOpacity>
-              <Text>Press here</Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-
-        <View style={styles.bottomItem}>
-          <View style={styles.bottomItemInner}>
-            <TouchableOpacity>
-              <Text>Press here</Text>
-            </TouchableOpacity>
-          </View>
-        </View> */}
       
        </View> 
     </View>
