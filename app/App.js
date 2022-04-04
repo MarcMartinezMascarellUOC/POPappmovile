@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import retosBanner from './assets/retosBanner.jpg';
 
 export default function App() {
@@ -9,7 +9,26 @@ export default function App() {
       <Image source={retosBanner} style={{width: 500, height: 300}}/>
       <StatusBar style="auto" />
       <View style={styles.menuContainer}>
-        <Text>Menú</Text>
+        <TouchableOpacity
+          onPress={() => alert('Hello World!')}
+          style={[styles.button, {}]}>
+            <Text style={styles.buttonText}>EVOLUCIÓN</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => alert('Hello World!')}
+          style={styles.button}>
+            <Text style={styles.buttonText}>NUEVO RETO</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => alert('Hello World!')}
+          style={styles.button}>
+            <Text style={styles.buttonText}>PERFIL</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => alert('Hello World!')}
+          style={styles.button}>
+            <Text style={styles.buttonText}>CONTACTAR</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -23,7 +42,24 @@ const styles = StyleSheet.create({
     backgroundColor: 'bisque',
   },
   menuContainer: {
-
-  }
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  button: {
+    backgroundColor: 'cadetblue',
+    width: '40%',
+    height: 150,
+    borderRadius: 20,
+    margin: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  buttonText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: 'dimgrey',
+  },
 
 });
