@@ -2,7 +2,7 @@ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import retosBanner from './assets/retosBanner.jpg';
-import { menuComponente } from './Components/menuComponente';
+import { MenuComponente } from './Components/MenuComponente';
 
 export default function App() {
   
@@ -18,10 +18,10 @@ export default function App() {
         </View>
 
       
-       {/* <menuComponente /> */}
-       <View style={styles.menuContainer}>
+       <MenuComponente />
+       {/* <View style={styles.menuContainer}> */}
         
-        <TouchableOpacity style={styles.bottomItem} onPress={() => {alert("EVOLUCIÓN")}}>
+        {/* <TouchableOpacity style={styles.bottomItem} onPress={() => {alert("EVOLUCIÓN")}}>
           <View style={styles.bottomItemInner}>
             <Text style={styles.textoBoxes}>EVOLUCIÓN</Text>
           </View>
@@ -43,9 +43,9 @@ export default function App() {
           <View style={styles.bottomItemInner}>
             <Text style={styles.textoBoxes}>CONTACTAR</Text>
           </View>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       
-       </View> 
+       {/* </View>  */}
     </View>
   );
 }
