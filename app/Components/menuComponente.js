@@ -1,7 +1,30 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import HomeScreen from './App.js';
+import NuevoRetoScreen from './NuevoReto.js';
 
+const Stack = createStackNavigator();
 
+class App extends React.Component {
+  render() {
+    return (
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen
+            name="Home"
+            component={HomeScreen}
+          />
+          <Stack.Screen
+              name="NuevoReto"
+              component={NuevoRetoScreen}
+            />
+        </Stack.Navigator>
+      </NavigationContainer>
+    );
+  }
+}
 
 const MenuComponente = () => {
          return(
@@ -14,7 +37,7 @@ const MenuComponente = () => {
                     </View>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.bottomItem} onPress={() => {alert("NUEVO RETO")}}>
+                <TouchableOpacity style={styles.bottomItem} onPress={() => this.props.navigation.navigate('NuevoReto')}>
                     <View style={styles.bottomItemInner}>
                         <Text style={styles.textoBoxes}>NUEVO RETO</Text>
                     </View>
