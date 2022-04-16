@@ -2,7 +2,10 @@ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import retosBanner from './assets/retosBanner.jpg';
-import { menuComponente } from './Components/menuComponente';
+// import { MenuComponente } from './Components/MenuComponente';
+
+//screens
+import PerfilScreen from './screens/PerfilScreen';
 
 export default function App() {
   
@@ -17,8 +20,6 @@ export default function App() {
         <View style={styles.center}>
         </View>
 
-      
-       {/* <menuComponente /> */}
        <View style={styles.menuContainer}>
         
         <TouchableOpacity style={styles.bottomItem} onPress={() => {alert("EVOLUCIÓN")}}>
@@ -45,7 +46,7 @@ export default function App() {
           </View>
         </TouchableOpacity>
       
-       </View> 
+       </View>
     </View>
   );
 }
